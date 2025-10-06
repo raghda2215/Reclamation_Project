@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "AtelierReclamationMobile",
+    "slug": "atelier-reclamation-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "extra": {
+      "eas": {
+        "projectId": "90c3e453-f18b-47b4-bc70-005205f4b655"
+      }
+    },
+    "splash": {
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Cette application utilise la caméra pour prendre des photos des réclamations.",
+        "NSPhotoLibraryUsageDescription": "Cette application accède à vos photos pour les télécharger avec les réclamations."
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "L'application a besoin d'accéder à vos photos.",
+          "cameraPermission": "L'application a besoin d'accéder à votre caméra."
+        }
+      ],
+      "expo-router",
+      "expo-secure-store"
+    ]
+  }
+}
